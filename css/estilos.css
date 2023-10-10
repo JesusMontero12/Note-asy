@@ -1,0 +1,1184 @@
+@charset "UTF-8";
+/*-----Enlace carpeta utilities-----*/
+/*Variables, mixins, funciones*/
+/*se llama con inlcude el nombre del mixin y los parametros*/
+/*-----Enlaces carpeta Base-----*/
+/*tipografias, reset*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: #F3F3F3;
+  /*-----Header barra de navegacion-----*/
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #FF6000;
+  position: sticky;
+  top: 0;
+}
+
+/*
+Fuentes tipograficas:
+ font-family: Montserrat
+ font-family: verdana
+ font- weight: 100
+ font- weight: 200
+ font- weight: 400
+*/
+/*-----Enlaces carpeta layout-----*/
+/*index: header, main, footer*/
+/*----- Estilos del Header -----*/
+/*---Logo del header---*/
+.LogoNav {
+  padding: 0.625rem; /*10px*/
+  margin: auto 1.875rem; /*30px*/
+}
+.LogoNav a {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+.LogoNav a .LogoHeader {
+  width: 1.875rem; /*30px*/
+  height: 1.875rem; /*30px*/
+  margin: 0rem 0.5rem; /*0px 8px*/
+}
+.LogoNav a h2 {
+  font-family: "Montserrat", sans-serif, bold;
+  font-size: 1.5625rem; /*25px*/
+}
+.LogoNav .IconBurger {
+  display: none;
+}
+
+/*---Nav del header(Inicio,login,register)*/
+.NavBar {
+  display: flex;
+  margin: 0rem; /*0px*/
+  padding: 0rem; /*0px*/
+}
+.NavBar li {
+  list-style: none;
+  padding: 1.25rem 0rem; /*20px 0px*/
+}
+.NavBar li a {
+  text-decoration: none;
+  font-family: "Quicksand";
+  font-size: 1rem; /*16px*/
+  font-weight: 400;
+  padding: 1.25rem; /*20px*/
+  color: #ffffff;
+}
+.NavBar li:hover {
+  background-color: #FFA559;
+  cursor: pointer;
+  border-radius: 0.125rem; /*2px*/
+}
+
+/*-----Index-----*/
+/*---Main section 1: foto de fondo, slogan, boton empezar---*/
+.SectionPrincipal {
+  width: 100%;
+  height: 23.75rem; /*380px*/
+  padding: 0;
+  margin: 0;
+  background-image: url(../assets/img/img-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.SectionPrincipal h1 {
+  padding: 4.375rem 0rem 6.25rem 0rem; /*70px 0px 100px 0px*/
+  font-family: "Montserrat", sans-serif, bold;
+  font-size: 2.5rem; /*40px*/
+}
+.SectionPrincipal button {
+  background-color: #FF6000;
+  border-radius: 0.3125rem; /*5px*/
+  border: none;
+  padding: 0.75rem; /*12px*/
+}
+.SectionPrincipal button a {
+  text-decoration: none;
+  font-family: "Montserrat" sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem; /*20px*/
+  color: #ffffff;
+}
+.SectionPrincipal button:hover {
+  background-color: #FFA559;
+}
+
+/*---Main section 2: Cards(notas,tareas,sincronizacion,busqueda)---*/
+.SectionCards {
+  display: inline-block;
+  width: 100%;
+  background-color: #F3F3F3;
+}
+.SectionCards h2 {
+  text-align: center;
+  padding: 0.9375rem; /*15px*/
+  margin: 0.625rem; /*10px*/
+  color: #FF6000;
+  font-family: "Montserrat", sans-serif, bold;
+  font-size: 2.5rem; /*40px*/
+}
+
+.ContentCards {
+  display: flex;
+  align-items: center;
+}
+
+.CardsInfo {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 21.875rem; /*350px*/
+  height: 15.625rem; /*250px*/
+  padding: 1.25rem; /*20px*/
+  margin: 3.125rem 1.875rem; /*50px 30px*/
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.625rem 0.625rem 2.5rem rgba(0, 0, 0, 0.6); /*10px 10px 40px*/
+  border-radius: 0.625rem; /*10px*/
+  background-color: #FF6000;
+}
+.CardsInfo .ContentText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CardsInfo .ContentText .DecoLeft, .CardsInfo .ContentText .DecoRight {
+  width: 2.5rem; /*40px*/
+  height: 2.5rem; /*40px*/
+  margin: 0;
+  padding: 0;
+}
+.CardsInfo .ContentText h3 {
+  margin: 0rem 0.3125rem; /*0px 5px*/
+  font-family: "Montserrat", sans-serif, bold;
+  font-size: 1.5625rem; /*20px*/
+}
+.CardsInfo p {
+  font-family: verdana;
+  font-size: 0.9375rem; /*15px*/
+}
+.CardsInfo img {
+  width: 5rem; /*80px*/
+  height: 5rem; /*80px*/
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem; /*10px*/
+}
+
+/*-----Footer-----*/
+.Footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContainerFooter {
+  font-family: verdana;
+  font-size: 0.9375rem; /*15px*/
+  padding: 1.25rem; /*20px*/
+  text-align: center;
+  background-color: #212529;
+}
+.ContainerFooter p {
+  margin: 0;
+  padding: 0.625rem; /*10px*/
+}
+.ContainerFooter p span {
+  color: #ffffff;
+}
+.ContainerFooter p a {
+  padding: 0.625rem; /*10px*/
+  border-radius: 0.5rem; /*8px*/
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  color: #ffffff;
+}
+.ContainerFooter p a:hover {
+  color: #212529;
+  background-color: #ffffff;
+}
+
+.Copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem; /*15px*/
+  padding: 1.125rem; /*18px*/
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.Copyright p {
+  margin: 0;
+  padding: 0.625rem; /*10px*/
+  color: #ffffff;
+}
+.Copyright p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.Copyright p a:hover {
+  text-decoration: none;
+}
+
+/*login, register*/
+/*-----Login-----*/
+.MainLogin {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  display: flex;
+  justify-content: center;
+}
+
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.875rem 2.5rem; /*30px 40px*/
+  box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem; /*5px*/
+  background-color: #ffffff;
+}
+.LoginContainer .imgForm {
+  border-radius: 50%;
+  background-color: #212529;
+}
+.LoginContainer .imgForm img {
+  width: 3.125rem; /*50px*/
+  height: 3.125rem; /*50px*/
+  padding: 0.625rem; /*10px*/
+}
+.LoginContainer h3 {
+  padding: 0.3125rem 0rem; /*5px 0px*/
+  color: #454545;
+  font-family: "Monserrat", sans-serif, bold;
+  font-size: 1.875rem; /*30px*/
+}
+
+.InputsForm {
+  margin: 0.625rem auto; /*10px auto*/
+}
+.InputsForm .InputInsert {
+  display: flex;
+  justify-content: center;
+  width: 18.75rem; /*300px*/
+  padding: 0.625rem 0rem 0.625rem 2.5rem; /*10px 0px 10px 40px*/
+  font-family: Verdana, sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #454545;
+  border-style: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 0.3125rem; /*5px*/
+}
+.InputsForm img {
+  position: absolute;
+  width: 1.25rem; /*20px*/
+  height: 1.25rem; /*20px*/
+  margin: 0.75rem 0rem 0rem 0.625rem; /*12px 0px 0px 10px*/
+}
+
+.InputSend {
+  width: 18.75rem; /*300px*/
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem auto; /*10px auto*/
+  font-family: Verdana, sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #ffffff;
+  background-color: #212529;
+  border-radius: 0.125rem; /*2px*/
+  border-style: none;
+}
+
+.InputSend:hover {
+  background-color: #454545;
+}
+
+.AnclasForm a {
+  display: block;
+  padding: 0.125rem; /*2px*/
+  margin: 0.125rem; /*2px*/
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Monserrat", sans-serif;
+  font-size: 0.9375rem; /*15px*/
+}
+.AnclasForm a:hover {
+  text-decoration: underline;
+}
+
+.MediaSocialForm .IconGoogle, .MediaSocialForm .IconFacebook {
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem 1.875rem; /*10px 30px*/
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+/*-----El archivo register.html contiene boostrap cualquier cambio revisar el archio html-----*/
+/*-----Register-----*/
+.MainRegister {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Register {
+  display: flex;
+  justify-content: center;
+}
+
+.RegisterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 2.5rem; /*20px 40px*/
+  box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem; /*5px*/
+  background-color: #ffffff;
+}
+.RegisterContainer .imgForm {
+  border-radius: 50%;
+  background-color: #212529;
+}
+.RegisterContainer .imgForm img {
+  width: 3.125rem; /*50px*/
+  height: 3.125rem; /*50px*/
+  padding: 0.625rem; /*10px*/
+}
+.RegisterContainer h3 {
+  padding: 0.3125rem 0rem; /*5px 0px*/
+  color: #454545;
+  font-family: "Monserrat", sans-serif, bold;
+  font-size: 1.875rem; /*30px*/
+}
+
+/*dashboard: grid, header, nav superior, main*/
+/*-----Dashboar-----*/
+/*---Contenedor principal---*/
+.GridDashBoard {
+  display: grid;
+  grid-template-columns: 18.75rem 1fr;
+  grid-template-rows: 4.375rem 100vh;
+  grid-template-areas: "HeaderDB MainDB" "HeaderDB ContentDB";
+  width: 100%;
+  height: 100vh;
+}
+.GridDashBoard a {
+  color: #ffffff;
+}
+.GridDashBoard a:hover {
+  color: #ffffff;
+}
+
+/*-----Dashboar-----*/
+/*---Section 1 header lateral izquierdo----*/
+/*-header (datos del usuario)-*/
+.GridHeader {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #FF6000;
+  grid-area: HeaderDB;
+}
+.GridHeader .HeaderHidden {
+  display: none;
+}
+
+.ProfileUser {
+  padding: 0.625rem; /*10px*/
+  margin: 0.3125rem; /*5px*/
+  text-align: center;
+}
+.ProfileUser img {
+  width: 7.5rem; /*120px*/
+  height: 7.5rem; /*120px*/
+  border-radius: 50%;
+  margin: 0.625rem; /*10px*/
+}
+.ProfileUser h2 a {
+  padding: 0.3125rem; /*5px*/
+  margin: 0.5rem 0.125rem; /*8px 2px*/
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.25rem; /*20px*/
+  text-decoration: none;
+}
+.ProfileUser h2 a:hover {
+  font-size: 1.375rem; /*22px*/
+  cursor: pointer;
+}
+
+/*-Nav lateral (menu)-*/
+.ContainerMenu {
+  width: 100%;
+}
+
+.NavBarVertical {
+  text-align: center;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.25rem; /*20px*/
+  margin: 0;
+  padding: 0;
+}
+.NavBarVertical li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 1.25rem; /*20px*/
+}
+.NavBarVertical li a {
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 1.25rem; /*20px*/
+  padding: auto;
+}
+.NavBarVertical li:hover {
+  background-color: bg-2;
+  cursor: pointer;
+  border-radius: 0.125rem; /*2px*/
+}
+.NavBarVertical .Item1 {
+  background-color: #FFA559;
+}
+
+/*-----Dashboard-----*/
+/*---Section 2 nav superior----*/
+.GridMain {
+  display: flex;
+  justify-content: space-between;
+  grid-area: MainDB;
+}
+.GridMain h2 {
+  margin: 1.25rem 0rem 0rem 3.125rem; /*20px 0px 0px 50px*/
+  color: #454545;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.25rem; /*20px*/
+}
+
+/*-buscador-*/
+.ContainerSearch {
+  margin: 1.25rem 1.875rem 0rem 0rem; /*20px 30px 0px 0px*/
+}
+.ContainerSearch img {
+  width: 0.9375rem; /*15px*/
+  height: 0.9375rem; /*15px*/
+  position: absolute;
+  margin: 0.4375rem; /*7px*/
+}
+.ContainerSearch input {
+  width: 21.875rem; /*350px*/
+  height: 1.875rem; /*30px*/
+  padding: 0rem 0rem 0rem 1.875rem; /*0px 0px 0px 30px*/
+  border-radius: 0.3125rem; /*5px*/
+  color: #454545;
+  font-family: verdana;
+  border-style: none;
+  border-bottom: 0.0313rem solid rgba(0, 0, 0, 0.8); /*0.5px*/
+}
+
+/*-----Dashboard-----*/
+/*---Section 3 caja contenedora de informacion----*/
+.GridContent {
+  width: 85%;
+  height: 30rem; /*480px*/
+  margin: 1.875rem auto; /*30px auto*/
+  background-color: #ffffff;
+  border-radius: 0.3125rem; /*5px*/
+  box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2); /*10px 10px 10px*/
+  grid-area: ContentDB;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+}
+
+.LineDecoration {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 0.3125rem; /*5px*/
+  background-color: #FF6000;
+  border-radius: 2px;
+}
+
+.ContainerInfo .nav-link {
+  color: #454545;
+}
+.ContainerInfo form input, .ContainerInfo label {
+  color: #454545 !important;
+}
+.ContainerInfo button {
+  color: #ffffff;
+}
+.ContainerInfo button:hover {
+  background-color: bg-2;
+}
+
+/*Formulario pestana Nuevo*/
+.tab-content .container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0.625rem auto; /*10px auto*/
+}
+
+.form-group {
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem; /*10px*/
+}
+
+/*Configuration: header, main*/
+/*-----Page Configuracion-----*/
+/*---Header---*/
+.ContainerConfigHeader {
+  width: 100%;
+  display: flex;
+}
+.ContainerConfigHeader img {
+  width: 2.1875rem; /*35px*/
+  height: 2.1875rem; /*35px*/
+  margin: 0.625rem 3.75rem; /*10px 60px*/
+}
+.ContainerConfigHeader h2 {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0rem;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.5625rem; /*25px*/
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/*-----Page Configuracion-----*/
+/* Main */
+.ContainerConfigInfo, .CardConfig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 1.875rem 0rem; /*0px 0px 30px 0px*/
+}
+.ContainerConfigInfo h2, .CardConfig h2 {
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem; /*10px*/
+  color: #454545;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.5625rem; /*25px*/
+}
+
+.CardConfig {
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+.CardConfig .CardHeader {
+  width: 100%;
+  background-color: #F3F3F3;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); /*5px 5px 5px*/
+}
+.CardConfig .CardHeader .GridHeaderCard {
+  display: grid;
+  height: 5.625rem; /*90px*/
+  grid-template-columns: 3.75rem 100%; /*60px 100%*/
+  grid-template-rows: 9.375rem; /*150px*/
+  grid-template-areas: "ImgProfile DataUser";
+}
+.CardConfig .CardHeader .GridHeaderCard .ProfileUserImg {
+  width: 3.75rem; /*60px*/
+  height: 3.75rem; /*60px*/
+  border-radius: 50%;
+  margin: 0.9375rem; /*15px*/
+  grid-area: ImgProfile;
+}
+.CardConfig .CardHeader .GridHeaderCard .IconUpdate {
+  position: absolute;
+  margin: 3.125rem 0rem 0rem 4.0625rem; /*50px 0px 0px 65px*/
+  transition: transform 0.8ms;
+}
+.CardConfig .CardHeader .GridHeaderCard .IconUpdate:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.CardConfig .CardHeader .GridHeaderCard .DateUser {
+  display: block;
+  margin: 0.625rem; /*10px*/
+  grid-area: DataUser;
+}
+.CardConfig .CardHeader .GridHeaderCard .DateUser .h2, .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.5625rem; /*25px*/
+  margin: 0rem 2.5rem; /*0px 40px*/
+  padding: 0.3125rem; /*5px*/
+  color: #454545;
+}
+.CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+  font-size: 0.75rem; /*12px*/
+}
+
+.ProfileSection {
+  width: 100%;
+  padding: 1.5625rem; /*25px*/
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); /*5px 5px 5px*/
+}
+.ProfileSection .BtnAConfig {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.8ms;
+}
+.ProfileSection h2 {
+  margin: 0;
+  padding: 0.125rem 0.3125rem; /*2px 5px*/
+  font-size: 1rem; /*16px*/
+}
+.ProfileSection .IconRight {
+  width: 0.625rem; /*10px*/
+  height: 0.625rem; /*10px*/
+  position: absolute;
+  right: 15.625rem; /*250px*/
+}
+.ProfileSection .IconItem {
+  width: 1.875rem; /*30px*/
+  height: 1.875rem; /*30px*/
+  margin: 0rem 1.5625rem; /*0px 25px*/
+}
+
+.ProfileSection:hover {
+  background-color: #F3F3F3;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.ProfileSection:hover .IconRight {
+  right: 3.125rem; /*50px*/
+}
+
+/*------Enlaces Responsive Carpeta layout/media-----*/
+/*Media Query de 1024px(laptos)*/
+/*----- estilos responsivos para portil(laptos) ------*/
+@media (max-width: 1024px) {
+  /*----- Index.html Responsive ------*/
+  .NavBar li a {
+    font-size: 0.875rem;
+  }
+  .SectionPrincipal {
+    height: 17.5rem; /*280px*/
+  }
+  .SectionPrincipal h1 {
+    padding: 4.375rem 0rem 1.25rem 0rem;
+    font-size: 1.5625rem; /*25px*/
+  }
+  .SectionPrincipal button {
+    padding: 0.75rem; /*12px*/
+  }
+  .SectionPrincipal a {
+    font-size: 0.9375rem; /*15px*/
+  }
+  .SectionCards h2 {
+    padding: 0.375rem 0.375rem 0.25rem 0.375rem; /*6px*/
+    margin: 0.3125rem; /*5px*/
+    font-size: 1.875rem; /*30px*/
+  }
+  .CardsInfo {
+    width: 15.625rem; /*250px*/
+    height: 14.375rem; /*220px*/
+    padding: 1.25rem; /*20px*/
+    margin: 1.875rem 1.875rem 3.125rem 1.875rem; /*30px 30px 50px 30px*/
+  }
+  .CardsInfo img {
+    width: 3.75rem; /*60px*/
+    height: 3.75rem; /*60px*/
+    padding: 0.5rem; /*8px*/
+    margin: 0.5rem; /*8px*/
+  }
+  .CardsInfo .ContentText {
+    margin-bottom: 0.3125rem; /*5px*/
+  }
+  .CardsInfo .ContentText .DecoLeft, .CardsInfo .ContentText .DecoRight {
+    width: 1.5625rem; /*25px*/
+    height: 1.5625rem; /*25px*/
+  }
+  .CardsInfo .ContentText h3 {
+    font-size: 1rem; /*16px*/
+  }
+  .CardsInfo p {
+    font-size: 0.8125rem; /*13px*/
+  }
+  /*----- Footer ------*/
+  .ContainerFooter {
+    font-size: 0.8125rem; /*13px*/
+    padding: 1.125rem; /*18px*/
+  }
+  .ContainerFooter p a {
+    padding: 0.5rem; /*8px*/
+  }
+  .Copyright {
+    font-size: 0.8125rem; /*13px*/
+    padding: 1.125rem; /*18px*/
+  }
+  /*----- Login.html responsive ------*/
+  /*El login ya estan responsive*/
+  /*----- Register.html responsive ------*/
+  /*El register ya estan responsive*/
+  /*-----Dashboar-----*/
+  /*---Contenedor principal---*/
+  .GridDashBoard {
+    display: grid;
+    grid-template-columns: 15.625rem 1fr;
+    grid-template-rows: 4.375rem 100vh;
+    grid-template-areas: "HeaderDB MainDB" "HeaderDB ContentDB";
+  }
+  /*---Section 1 header lateral izquierdo----*/
+  .ProfileUser img {
+    width: 6.25rem; /*100px*/
+    height: 6.25rem; /*100px*/
+  }
+  .ProfileUser h2 a {
+    font-size: 0.9375rem; /*15px*/
+  }
+  .ProfileUser h2 a:hover {
+    font-size: 1.125rem; /*18px*/
+  }
+  /*-Nav lateral (menu)-*/
+  .NavBarVertical li a {
+    font-size: 0.9375rem; /*15px*/
+  }
+  /*---Section 2 nav superior----*/
+  .GridMain h2 {
+    font-size: 0.9375rem; /*20px*/
+  }
+  /*-buscador-*/
+  .ContainerSearch input {
+    width: 18.75rem; /*300px*/
+  }
+  /*---Section 3 caja contenedora de informacion----*/
+  /*El section 3 esta maquetado con bootstrap y flexbox, revisar el html para cualquier cambio*/
+  /*-----Page Configuracion-----*/
+  /*---Header---*/
+  .ContainerConfigHeader img {
+    width: 2.1875rem; /*35px*/
+    height: 2.1875rem; /*35px*/
+    margin: 0.625rem 3.75rem; /*10px 60px*/
+  }
+  .ContainerConfigHeader h2 {
+    font-size: 1.25rem; /*20px*/
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  /*---Main---*/
+  .ContainerConfigInfo h2, .CardConfig h2 {
+    font-size: 1.25rem; /*20px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .DateUser .h2, .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+    font-size: 1.25rem; /*20px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+    font-size: 0.75rem; /*12px*/
+  }
+  .ProfileSection h2 {
+    font-size: 0.875rem; /*16px*/
+  }
+  .ProfileSection .IconRight {
+    width: 0.5rem; /*8px*/
+    height: 0.5rem; /*8px*/
+    right: 12.5rem; /*200px*/
+  }
+}
+/*Media Query de 768px(tablets)*/
+/*----- estilos responsivos para Tablets ------*/
+@media (max-width: 768px) {
+  /*----- Index.html Responsive ------*/
+  header .LogoNav h2 {
+    display: none;
+  }
+  .SectionPrincipal {
+    height: 220px; /*300px*/
+  }
+  .SectionPrincipal h1 {
+    padding: 3.125rem 0rem 1.25rem 0rem; /*50px 0px 20px 0px*/
+    font-size: 1.25rem; /*20px*/
+  }
+  .SectionPrincipal button {
+    padding: 0.5rem; /*8px*/
+  }
+  .SectionPrincipal a {
+    font-size: 0.75rem; /*15px*/
+  }
+  .SectionCards h2 {
+    padding: 0.25rem; /*4px*/
+    margin: 0.1875rem; /*3px*/
+    font-size: 1.25rem; /*20px*/
+  }
+  main {
+    height: 90vh;
+  }
+  .CardsInfo {
+    width: 280px; /*250px*/
+    height: 160px; /*160px*/
+    padding: 0.3125rem; /*20px*/
+    margin: 0.625rem 1.25rem 1.875rem 1.25rem; /*20px 20px 30px 20px*/
+  }
+  .CardsInfo img {
+    width: 2.8125rem; /*45px*/
+    height: 2.8125rem; /*45px*/
+    padding: 0.3125rem; /*5px*/
+    margin: 0.3125rem; /*5px*/
+  }
+  .CardsInfo .ContentText {
+    margin-bottom: 0.3125rem; /*5px*/
+  }
+  .CardsInfo .ContentText .DecoLef, .CardsInfo .ContentText .DecoRight {
+    width: 1.125rem; /*18px*/
+    height: 1.125rem; /*18px*/
+  }
+  .CardsInfo .ContentText h3 {
+    font-size: 0.75rem; /*12px*/
+  }
+  .CardsInfo p {
+    font-size: 0.5rem; /*8px*/
+  }
+  /*----- Footer ------*/
+  .ContainerFooter {
+    font-size: 0.625rem; /*10px*/
+    padding: 0.9375rem; /*15px*/
+  }
+  .ContainerFooter p a {
+    padding: 0.3125rem; /*5px*/
+  }
+  .Copyright {
+    font-size: 0.625rem; /*10px*/
+    padding: 0.9375rem; /*15px*/
+  }
+  /*----- Login.html responsive ------*/
+  /*El login ya estan responsive*/
+  /*----- Register.html responsive ------*/
+  /*El register ya estan responsive*/
+  /*-----Dashboar-----*/
+  /*---Contenedor principal---*/
+  .GridDashBoard {
+    display: grid;
+    grid-template-columns: 9.375rem 1fr;
+    grid-template-rows: 4.375rem 100vh;
+    grid-template-areas: "HeaderDB MainDB" "HeaderDB ContentDB";
+  }
+  /*---Section 1 header lateral izquierdo----*/
+  .ProfileUser img {
+    width: 5rem; /*80px*/
+    height: 5rem; /*80px*/
+  }
+  .ProfileUser h2 a {
+    font-size: 0.75rem; /*12px*/
+  }
+  .ProfileUser h2 a:hover {
+    font-size: 0.9375rem; /*15px*/
+  }
+  /*---Section 2 nav superior----*/
+  .GridMain h2 {
+    font-size: 1rem; /*16px*/
+  }
+  /*-buscador-*/
+  .ContainerSearch input {
+    width: 15.625rem; /*250px*/
+    height: 1.5625rem; /*25px*/
+    font-size: 0.75rem; /*12px*/
+  }
+  /*---Section 3 caja contenedora de informacion----*/
+  .GridContent {
+    width: 90%;
+    height: 26.25rem; /*420px*/
+  }
+  /*Tamaño de tipografia y espaciado de inputs del formulario de tareas*/
+  .form-group {
+    padding: 0.5rem; /*8px*/
+    margin: 0.5rem; /*8px*/
+  }
+  .form-group input, .form-group textarea, .form-group label, .form-group button {
+    font-size: 0.9375rem; /*15px*/
+  }
+  /*Tamaño de tipografia y espaciado de tablas del listado de tareas*/
+  thead tr th {
+    font-size: 0.9375rem; /*15px*/
+  }
+  tbody tr th {
+    font-size: 0.9375rem; /*15px*/
+  }
+  tbody tr td {
+    font-size: 0.9375rem; /*15px*/
+  }
+  /*-----Page Configuracion-----*/
+  /*---Header---*/
+  .ContainerConfigHeader img {
+    width: 1.5625rem; /*25px*/
+    height: 1.5625rem; /*25px*/
+    margin: 0.625rem 1.875rem; /*10px 30px*/
+  }
+  .ContainerConfigHeader h2 {
+    font-size: 1.125rem; /*18px*/
+  }
+  /* Main */
+  .ContainerConfigInfo h2, .CardConfig h2 {
+    font-size: 1.25rem; /*20px*/
+  }
+  .CardConfig {
+    width: 85%;
+  }
+  .CardConfig .CardHeader .GridHeaderCard .ProfileUserImg {
+    width: 3.125rem; /*50px*/
+    height: 3.125rem; /*50px*/
+    margin: 1.25rem; /*20px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .IconUpdate {
+    margin: 3.125rem 0rem 0rem 3.75rem; /*50px 0px 0px 60px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .DateUser .h2, .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+    font-size: 1.125rem; /*18px*/
+    margin: 0.625rem 0rem 0rem 1.25rem; /*10px 0px 0px 20px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+    margin: 0rem 0rem 0rem 1.25rem; /*5px 0px 0px 20px*/
+    font-size: 0.75rem; /*12px*/
+  }
+  .ProfileSection h2 {
+    font-size: 0.875rem; /*14px*/
+  }
+  .ProfileSection .IconRight {
+    width: 0.5rem; /*8px*/
+    height: 0.5rem; /*8px*/
+    right: 5rem; /*80px*/
+  }
+  .ProfileSection .IconItem {
+    width: 1.5625rem; /*25px*/
+    height: 1.5625rem; /*25x*/
+  }
+}
+/*Media Query de 425px(Celular)*/
+/*----- estilos responsivos para Celulares ------*/
+@media (max-width: 425px) {
+  /*----- Index.html Responsive ------*/
+  header .LogoNav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header .LogoNav a .LogoHeader {
+    display: none;
+  }
+  header .LogoNav a h2 {
+    display: flex;
+  }
+  header .LogoNav .IconBurger {
+    display: block;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    position: absolute;
+    right: 20px;
+  }
+  header .NavBar {
+    display: none;
+  }
+  .SectionPrincipal {
+    height: 150px; /*300px*/
+  }
+  .SectionPrincipal h1 {
+    padding: 1.875rem 0rem 0.9375rem 0rem; /*30px 0px 15px 0px*/
+    font-size: 0.75rem; /*12px*/
+  }
+  .SectionPrincipal button {
+    padding: 0.25rem; /*4px*/
+  }
+  .SectionPrincipal a {
+    font-size: 0.75rem; /*12px*/
+  }
+  .SectionCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "H2" "SectionCards";
+  }
+  .SectionCards h2 {
+    padding: 0.25rem; /*4px*/
+    margin: 0.1875rem; /*3px*/
+    font-size: 0.9375rem; /*15px*/
+    grid-area: H2;
+  }
+  .ContentCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card1 card2" "card3 card4";
+    grid-area: SectionCards;
+    margin: auto;
+  }
+  .ContentCards .ItemCard1 {
+    grid-area: card1;
+  }
+  .ContentCards .ItemCard2 {
+    grid-area: card2;
+  }
+  .ContentCards .ItemCard3 {
+    grid-area: card3;
+  }
+  .ContentCards .ItemCard4 {
+    grid-area: card4;
+  }
+  .CardsInfo {
+    width: 8.75rem; /*140px*/
+    height: 8.75rem; /*120px*/
+    padding: 0.3125rem; /*5px*/
+    margin: 1.875rem 1.25rem 1.875rem 1.25rem; /*20px 20px 30px 20px*/
+  }
+  .CardsInfo img {
+    width: 1.875rem; /*45px*/
+    height: 1.875rem; /*45px*/
+    padding: 0.3125rem; /*5px*/
+    margin: 0.3125rem; /*5px*/
+  }
+  .CardsInfo .ContentText {
+    margin-bottom: 0.3125rem; /*5px*/
+  }
+  .CardsInfo .ContentText .DecoLef, .CardsInfo .ContentText .DecoRight {
+    width: 1.125rem; /*18px*/
+    height: 1.125rem; /*18px*/
+  }
+  .CardsInfo .ContentText h3 {
+    font-size: 0.75rem; /*12px*/
+  }
+  .CardsInfo p {
+    font-size: 0.5rem; /*8px*/
+  }
+  /*----- Footer ------*/
+  .ContainerFooter {
+    font-size: 0.5rem; /*8px*/
+    padding: 0.75rem; /*12px*/
+  }
+  .ContainerFooter p a {
+    padding: 0.3125rem; /*5px*/
+  }
+  .Copyright {
+    font-size: 0.5rem; /*8px*/
+    padding: 0.75rem; /*12px*/
+  }
+  /*----- Login.html responsive ------*/
+  /*El login ya estan responsive*/
+  /*----- Register.html responsive ------*/
+  /*El register ya estan responsive*/
+  /*-----Dashboar-----*/
+  /*---Contenedor principal---*/
+  .GridDashBoard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px;
+    grid-template-areas: "HeaderDB" "ContentDB";
+  }
+  /*---Section 1 header lateral izquierdo----*/
+  .GridHeader {
+    grid-area: HeaderDB;
+  }
+  .GridHeader .HeaderHidden {
+    display: flex;
+  }
+  .GridHeader .HeaderHidden img {
+    margin: 0.3125rem; /*5px*/
+    padding: 0.125rem; /*5px*/
+    width: 1.875rem; /*30px*/
+    height: 1.875rem; /*30px*/
+  }
+  .GridHeader .ProfileUser, .GridHeader .ContainerMenu {
+    display: none;
+  }
+  /*---Section 2 nav superior----*/
+  .GridMain {
+    display: none;
+  }
+  /*---Section 3 caja contenedora de informacion----*/
+  .GridContent {
+    width: 90%;
+    height: 26.25rem; /*420px*/
+    grid-area: ContentDB;
+  }
+  /*Tamaño de tipografia y espaciado de inputs del formulario de tareas*/
+  .form-group {
+    padding: 0.3125rem; /*5px*/
+    margin: 0.312rem; /*5px*/
+  }
+  .form-group input, .form-group textarea, .form-group label, .form-group button {
+    font-size: 0.75rem; /*12px*/
+  }
+  /*Tamaño de tipografia y espaciado de tablas del listado de tareas*/
+  thead tr th {
+    font-size: 0.75rem; /*12px*/
+  }
+  tbody tr th {
+    font-size: 0.75rem; /*12px*/
+  }
+  tbody tr td {
+    font-size: 0.75rem; /*12px*/
+  }
+  /*-----Page Configuracion-----*/
+  /*---Header---*/
+  .ContainerConfigHeader img {
+    width: 1.5625rem; /*25px*/
+    height: 1.5625rem; /*25px*/
+    margin: 0.625rem 0.625rem; /*10px 10px*/
+  }
+  .ContainerConfigHeader h2 {
+    font-size: 0.875rem; /*14px*/
+  }
+  /* Main */
+  .ContainerConfigInfo h2, .CardConfig h2 {
+    font-size: 0.9375rem; /*15px*/
+  }
+  .CardConfig {
+    width: 90%;
+  }
+  .CardConfig .CardHeader .GridHeaderCard .ProfileUserImg {
+    width: 3.125rem; /*50px*/
+    height: 3.125rem; /*50px*/
+    margin: 1.25rem; /*20px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .IconUpdate {
+    margin: 3.125rem 0rem 0rem 3.75rem; /*50px 0px 0px 60px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .DateUser .h2, .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+    font-size: 0.9375rem; /*15px*/
+    margin: 0.625rem 0rem 0rem 1.25rem; /*10px 0px 0px 20px*/
+  }
+  .CardConfig .CardHeader .GridHeaderCard .DateUser h3 {
+    margin: 0rem 0rem 0rem 1.25rem; /*5px 0px 0px 20px*/
+    font-size: 0.625rem; /*10px*/
+  }
+  .ProfileSection h2 {
+    font-size: 0.75rem; /*12px*/
+  }
+  .ProfileSection .IconRight {
+    width: 0.5rem; /*8px*/
+    height: 0.5rem; /*8px*/
+    right: 3.125rem; /*50px*/
+  }
+  .ProfileSection .IconItem {
+    width: 1.5625rem; /*25px*/
+    height: 1.5625rem; /*25x*/
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

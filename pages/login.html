@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Iniciar, en linea, Asistente, Tareas, Calendario">
+    <meta name="description" content="Asistente virtual, inicia conecta con tu asistente">
+    <meta name="author" content="MontCorp">
+    <meta name="Copyright" content="MontCorp">
+    <meta property="og:title" content=Login>
+    <meta property="og:site_name" content=Note-asy>
+    <meta property="og:url" content=https://note-asy.netlify.app/pages/login>
+    <meta property="og:description" content=Asistente virtual, inicia conecta con tu asistente>
+    <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
+    <title>Login - Note-asy</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <!--Header - barra de navegacion-->
+    <header>
+        <div class="LogoNav">
+            <a href="#">                
+                <img src="../assets/img/logo.png" class="LogoHeader" alt="Logo">
+                <h2>Note'asy</h2>
+                <img src="../assets/icons/Icon-Menu.png" class="IconBurger" alt="Icono menu">
+            </a>
+        </div>
+        <nav>
+            <ul class="NavBar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Login - Formulario de login - Contenido de la pagina-->
+    <main class="MainLogin">
+        <div class="Login">
+            <div class="LoginContainer">
+                <div class="imgForm">
+                    <img src="../assets/img/logo.png" alt="Logo intro del formulario">
+                </div>
+                <h3>Login</h3>
+                <form action="./dashboard.html" class="FormContainer">
+                    <div class="InputContainerInsert">
+                        <div class="InputsForm">
+                            <span><img src="../assets/icons/Icon-User.png" alt=""></span>
+                            <input type="text" class="InputInsert" placeholder="Nombre de usuario" requir>                            
+                        </div>
+                        <div class="InputsForm">
+                            <span><img src="../assets/icons/Icon-Key.png" alt=""></span>   
+                            <input type="password" class="InputInsert" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <input type="submit" class="InputSend" name="Login" value="Login">
+                </form>
+                <!--Links de Recuperacion de contraseña y registro-->
+                <div class="AnclasForm">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <a href="./register.html">¿No tienes cuenta? ¡Regístrate ya!</a>
+                </div>
+                <!--Apis para loguearse con facebook y google-->
+                <div class="MediaSocialForm">
+                    <a href=""><img src="../assets/icons/Icon-Google.png" class="IconGoogle" alt="Logo de google"></a>
+                    <a href=""><img src="../assets/icons/Icon-Facebook.png" class="IconFacebook" alt="Logo de facebook"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer - Datos de contacto -->
+    <footer class="Footer">
+        <div class="Copyright">
+            <p>
+                <span>© 2023 Copyright: </span> 
+                <a href="#">MontCorp.</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

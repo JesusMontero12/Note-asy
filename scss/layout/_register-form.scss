@@ -1,0 +1,36 @@
+/*-----El archivo register.html contiene boostrap cualquier cambio revisar el archio html-----*/
+/*-----Register-----*/
+.MainRegister{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Register{
+    display: flex;
+    justify-content: center;
+} 
+.RegisterContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 1.25rem 2.5rem;/*20px 40px*/
+    box-shadow: 0.625rem 0.625rem .625rem rgba(0, 0, 0, 0.2); 
+    border-radius: .3125rem;/*5px*/
+    background-color: $bg-7;
+    .imgForm{        
+        border-radius: 50%;
+        background-color: $bg-8;
+        img{
+            width: 3.125rem;/*50px*/
+            height: 3.125rem;/*50px*/
+            padding: .625rem;/*10px*/
+        }
+    }
+    h3{
+        padding: .3125rem 0rem;/*5px 0px*/
+        color: $color-text-4; 
+        font-family: 'Monserrat', sans-serif,bold;
+        font-size: 1.875rem;/*30px*/
+    }
+}

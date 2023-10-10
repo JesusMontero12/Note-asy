@@ -1,0 +1,103 @@
+/*-----Page Configuracion-----*/
+/* Main */
+.ContainerConfigInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem 1.875rem 0rem;/*0px 0px 30px 0px*/
+    h2{
+        padding: .625rem;/*10px*/
+        margin: .625rem;/*10px*/
+        color: #454545;
+        font-family: 'Monserrat',sans-serif;
+        font-size: 1.5625rem;/*25px*/
+    }
+}
+.CardConfig{
+    @extend .ContainerConfigInfo;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    .CardHeader{
+        width: 100%;
+        background-color: $bg-6;
+        box-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.2); /*5px 5px 5px*/
+        .GridHeaderCard{
+            display: grid;
+            height: 5.625rem;/*90px*/
+            grid-template-columns: 3.75rem 100%;/*60px 100%*/
+            grid-template-rows: 9.375rem;/*150px*/
+            grid-template-areas:
+            "ImgProfile DataUser"
+            ;
+            .ProfileUserImg{ 
+                width: 3.75rem;/*60px*/
+                height: 3.75rem;/*60px*/
+                border-radius: 50%;
+                margin: .9375rem;/*15px*/
+                grid-area: ImgProfile;
+            }
+            .IconUpdate{
+                position: absolute;
+                margin: 3.125rem 0rem 0rem 4.0625rem;/*50px 0px 0px 65px*/
+                transition: transform 0.8ms;
+            }
+            .IconUpdate:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+            .DateUser{
+                display: block;
+                margin: .625rem;/*10px*/
+                grid-area: DataUser;
+                .h2{
+                    font-family: 'Monserrat',sans-serif;
+                    font-size: 1.5625rem;/*25px*/
+                    margin: 0rem 2.5rem;/*0px 40px*/
+                    padding: .3125rem;/*5px*/
+                    color: #454545;
+                }
+                h3{ 
+                    @extend .h2;
+                    font-size: .75rem;/*12px*/
+                }
+             }
+        }
+    }
+}
+.ProfileSection{
+    width: 100%;
+    padding: 1.5625rem;/*25px*/
+    box-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.2);/*5px 5px 5px*/
+    .BtnAConfig{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.8ms;
+    }
+    h2{
+        margin: 0;
+        padding: .125rem .3125rem;/*2px 5px*/
+        font-size: 1rem;/*16px*/
+    }
+    .IconRight{
+        width: .625rem;/*10px*/
+        height: .625rem;/*10px*/
+        position: absolute;
+        right: 15.625rem;/*250px*/
+    }
+    .IconItem{
+        width: 1.875rem;/*30px*/
+        height:1.875rem;/*30px*/
+        margin: 0rem 1.5625rem;/*0px 25px*/
+    }
+}
+.ProfileSection:hover{
+    background-color: $bg-6;
+    cursor: pointer;
+    transform: scale(1.05);
+    .IconRight{
+        right: 3.125rem;/*50px*/
+    }
+}

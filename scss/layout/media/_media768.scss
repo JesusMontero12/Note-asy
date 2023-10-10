@@ -1,0 +1,198 @@
+/*----- estilos responsivos para Tablets ------*/
+@media(max-width: 768px){
+    /*----- Index.html Responsive ------*/
+    header .LogoNav h2{
+        display: none;
+    }
+    .SectionPrincipal {
+        height: 220px; /*300px*/
+        h1 {
+        padding: 3.125rem 0rem 1.25rem 0rem;/*50px 0px 20px 0px*/
+        font-size: 1.25rem; /*20px*/
+        }
+        button {
+            padding: .5rem;/*8px*/
+        }
+        a{
+            font-size: .75rem;/*15px*/
+        }
+    }
+    .SectionCards {
+        h2{
+            padding: .25rem; /*4px*/
+            margin: .1875rem; /*3px*/  
+            font-size: 1.25rem; /*20px*/
+        }
+    }
+    main{
+        height: 90vh;
+    }
+
+    .CardsInfo{
+        width: 280px;/*250px*/
+        height: 160px;/*160px*/
+        padding: .3125rem; /*20px*/
+        margin: .625rem 1.25rem 1.875rem 1.25rem; /*20px 20px 30px 20px*/
+        img{
+            width: 2.8125rem; /*45px*/
+            height: 2.8125rem; /*45px*/
+            padding: .3125rem; /*5px*/
+            margin: .3125rem; /*5px*/
+        }
+        .ContentText{
+            margin-bottom: .3125rem;/*5px*/
+            .DecoLef, .DecoRight{
+                width: 1.125rem;/*18px*/
+                height: 1.125rem;/*18px*/
+            }
+            h3{
+                font-size: .75rem; /*12px*/
+            } 
+        }
+        p{
+            font-size: .5rem;/*8px*/
+        }
+    }    
+    /*----- Footer ------*/
+    .ContainerFooter{
+        font-size: .625rem;/*10px*/
+        padding: .9375rem;/*15px*/
+        p{
+            a{
+                padding: .3125rem;/*5px*/
+            }
+        }
+    }
+    .Copyright{
+        font-size: .625rem;/*10px*/
+        padding: .9375rem;/*15px*/
+    }
+
+    /*----- Login.html responsive ------*/
+    /*El login ya estan responsive*/
+
+    /*----- Register.html responsive ------*/
+    /*El register ya estan responsive*/
+
+    /*-----Dashboar-----*/
+    /*---Contenedor principal---*/
+    .GridDashBoard{
+        @include grid(9.375rem 1fr, 4.375rem 100vh, "HeaderDB MainDB""HeaderDB ContentDB");
+    }
+    /*---Section 1 header lateral izquierdo----*/
+    .ProfileUser{
+        img{
+            width: 5rem;/*80px*/
+            height: 5rem;/*80px*/
+        }
+        h2 a{
+            font-size: .75rem;/*12px*/
+        }
+        h2 a:hover{
+            font-size: .9375rem;/*15px*/
+        }
+    }
+    /*---Section 2 nav superior----*/
+    .GridMain{
+        h2{
+            font-size: 1rem;/*16px*/
+        }
+    }
+    /*-buscador-*/
+    .ContainerSearch{
+        input{
+            width: 15.625rem;/*250px*/
+            height: 1.5625rem;/*25px*/
+            font-size: .75rem;/*12px*/
+        }
+    }
+/*---Section 3 caja contenedora de informacion----*/
+.GridContent{
+    width: 90%;
+    height: 26.25rem;/*420px*/
+}
+/*Tamaño de tipografia y espaciado de inputs del formulario de tareas*/
+    .form-group{
+        padding: .5rem;/*8px*/
+        margin: .5rem;/*8px*/
+        input, textarea, label, button{
+            font-size: .9375rem;/*15px*/
+        }
+    }
+/*Tamaño de tipografia y espaciado de tablas del listado de tareas*/
+    thead{
+        tr{
+            th{
+                font-size: .9375rem;/*15px*/
+            }
+        }
+    }
+    tbody{
+        tr{
+            th{
+                font-size: .9375rem;/*15px*/
+            }
+            td{
+                font-size: .9375rem;/*15px*/
+            }
+        }
+    }
+
+    /*-----Page Configuracion-----*/
+    /*---Header---*/
+    .ContainerConfigHeader{
+        img{
+            width: 1.5625rem;/*25px*/
+            height: 1.5625rem;/*25px*/       
+            margin: .625rem 1.875rem;/*10px 30px*/
+        }
+        h2{
+            font-size: 1.125rem;/*18px*/
+        }
+    }
+    /* Main */
+    .ContainerConfigInfo{
+        h2{
+            font-size: 1.25rem;/*20px*/
+        }
+    }
+    .CardConfig{
+        width: 85%;
+        .CardHeader{
+            .GridHeaderCard{
+                .ProfileUserImg{ 
+                    width: 3.125rem;/*50px*/
+                    height: 3.125rem;/*50px*/
+                    margin: 1.25rem;/*20px*/
+                }
+                .IconUpdate{
+                    margin: 3.125rem 0rem 0rem 3.75rem;/*50px 0px 0px 60px*/
+                }
+                .DateUser{
+                    .h2{
+                        font-size: 1.125rem;/*18px*/
+                        margin: .625rem 0rem 0rem 1.25rem;/*10px 0px 0px 20px*/
+                    }
+                    h3{ 
+                        margin: 0rem 0rem 0rem 1.25rem;/*5px 0px 0px 20px*/
+                        font-size: .75rem;/*12px*/
+                    }
+                }
+            }
+        }
+    }
+    .ProfileSection{
+        h2{
+            font-size: .875rem;/*14px*/
+        }
+        .IconRight{
+            width: .5rem;/*8px*/
+            height: .5rem;/*8px*/
+            right: 5rem;/*80px*/
+        }
+        .IconItem{
+            width: 1.5625rem;/*25px*/
+            height:1.5625rem;/*25x*/
+        }
+    }
+}

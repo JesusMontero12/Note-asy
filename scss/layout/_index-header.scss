@@ -1,0 +1,48 @@
+/*----- Estilos del Header -----*/
+/*---Logo del header---*/
+.LogoNav{
+    padding: .625rem; /*10px*/
+    margin: auto 1.875rem;/*30px*/
+    a{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: $color-text-7;
+        .LogoHeader{
+            width: 1.875rem;/*30px*/
+            height: 1.875rem;/*30px*/
+            margin: 0rem .5rem;/*0px 8px*/
+        }
+        h2{
+            font-family: 'Montserrat',sans-serif,bold;
+            font-size: 1.5625rem;/*25px*/
+        }
+    }    
+    .IconBurger{
+        display: none;
+    }    
+}
+/*---Nav del header(Inicio,login,register)*/
+.NavBar {
+    display: flex;
+    margin: 0rem;/*0px*/
+    padding: 0rem;/*0px*/
+    li{ 
+        list-style: none;
+        padding: 1.25rem 0rem;/*20px 0px*/
+        a {
+            text-decoration: none;
+            font-family: 'Quicksand';
+            font-size: 1rem;/*16px*/
+            font-weight: 400;
+            padding: 1.25rem;/*20px*/
+            color: $color-text-7;
+        }
+    }
+    li:hover{
+        background-color: $bg-2;
+        cursor: pointer;
+        border-radius: .125rem; /*2px*/
+    }
+}

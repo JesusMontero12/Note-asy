@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="registrar, virtual, Asistente, Tareas, Calendario">
+    <meta name="description" content="Asistente virtual, registrate y conoces lo que te ofrecemos">
+    <meta name="author" content="MontCorp">
+    <meta name="Copyright" content="MontCorp">
+    <meta property="og:title" content=register>
+    <meta property="og:site_name" content=Note-asy>
+    <meta property="og:url" content=https://note-asy.netlify.app/pages/register>
+    <meta property="og:description" content=Asistente virtual, regístrate y conoces lo que te ofrecemos>
+    <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
+    <title>Registro - Note-asy</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <!--Header - barra de navegacion-->
+    <header>
+        <div class="LogoNav">
+            <a href="#">                
+                <img src="../assets/img/logo.png" class="LogoHeader" alt="Logo">
+                <h2>Note'asy</h2>
+                <img src="../assets/icons/Icon-Menu.png" class="IconBurger" alt="Icono menu">
+            </a>
+        </div>
+        <nav>
+            <ul class="NavBar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Registro - Formulario de registro - Contenido de la pagina-->
+    <main class="MainRegister">
+        <div class="Register">
+            <div class="RegisterContainer">
+                <div class="imgForm">
+                    <img src="../assets/img/logo.png" alt="Logo intro del formulario">
+                </div>
+                <h3>Registro</h3>
+                <form action="" class="FormContainer">
+                    <div class="InputContainerInsert">
+                        <div class="InputsForm">
+                            <span><img src="../assets/icons/Icon-User.png" alt=""></span>
+                            <input type="text" class="InputInsert" placeholder="Nombres">                           
+                        </div>
+                        <div class="InputsForm">
+                            <span><img src="../assets/icons/Icon-Users.png" alt=""></span>
+                            <input type="text" class="InputInsert" placeholder="Apellidos">                          
+                        </div>
+                        <div class="InputsForm">
+                            <span><img src="../assets/icons/Icon-Email.png" alt=""></span>
+                            <input type="mail" class="InputInsert" placeholder="Correo">                          
+                        </div>
+                        <div class="InputsForm">
+                            <span><img src="../assets/icons/Icon-Key.png" alt=""></span>
+                            <input type="password" class="InputInsert" placeholder="Contraseña">                          
+                        </div>     
+                    </div>
+                    <input type="submit" class="InputSend" name="Register" value="Registrar">
+                </form>
+                <!--Link de login-->
+                <div class="AnclasForm">
+                    <a href="./login.html">¿Ya tienes cuenta? ¡Ingresa ya!</a>
+                </div>
+                <!--Apis para registrarse con facebook y google-->
+                <div class="MediaSocialForm">
+                    <a href=""><img src="../assets/icons/Icon-Google.png" class="IconGoogle" alt="Logo de google"></a>
+                    <a href=""><img src="../assets/icons/Icon-Facebook.png" class="IconFacebook" alt="Logo de facebook"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer - Datos de contacto -->
+    <footer class="Footer">
+        <div class="Copyright">
+            <p>
+                <span>© 2023 Copyright: </span> 
+                <a href="#">MontCorp.</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/*-----Dashboar-----*/
+/*---Section 1 header lateral izquierdo----*/
+/*-header (datos del usuario)-*/
+.GridHeader{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-1;
+    grid-area: HeaderDB;
+    .HeaderHidden{
+        display: none;
+    }
+}
+.ProfileUser{
+    padding: .625rem;/*10px*/
+    margin: .3125rem;/*5px*/
+    text-align: center;
+    img{
+        width: 7.5rem;/*120px*/
+        height: 7.5rem;/*120px*/
+        border-radius: 50%;
+        margin: .625rem;/*10px*/
+    }
+    h2 a{
+        padding: .3125rem;/*5px*/
+        margin: .5rem .125rem;/*8px 2px*/
+        font-family: 'Monserrat',sans-serif;
+        font-size: 1.25rem;/*20px*/
+        text-decoration: none;
+    }
+    h2 a:hover{
+        font-size: 1.375rem;/*22px*/
+        cursor: pointer;
+    }
+}
+/*-Nav lateral (menu)-*/
+.ContainerMenu{
+    width: 100%;
+}
+.NavBarVertical{
+    text-align: center;
+    font-family: 'Monserrat',sans-serif;
+    font-size: 1.25rem;/*20px*/
+    margin: 0;
+    padding: 0;
+    li{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 1.25rem;/*20px*/
+        a {
+            text-decoration: none;
+            font-family: verdana;
+            font-size: 1.25rem; /*20px*/
+            padding: auto ;
+        }
+    }
+    li:hover{
+        background-color: bg-2;
+        cursor: pointer;
+        border-radius: .125rem; /*2px*/
+    }
+    .Item1{
+        background-color: $bg-2;
+    }
+}

@@ -1,0 +1,33 @@
+/*-----Dashboard-----*/
+/*---Section 2 nav superior----*/
+.GridMain{
+    display: flex;
+    justify-content: space-between;
+    grid-area: MainDB;
+    h2{
+        margin: 1.25rem 0rem 0rem 3.125rem;/*20px 0px 0px 50px*/
+        color: $color-text-4;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 1.25rem;/*20px*/
+    }
+}
+/*-buscador-*/
+.ContainerSearch{
+    margin: 1.25rem 1.875rem 0rem 0rem;/*20px 30px 0px 0px*/
+    img{
+        width: .9375rem;/*15px*/
+        height: .9375rem;/*15px*/
+        position: absolute;
+        margin: .4375rem;/*7px*/
+    }
+    input{
+        width: 21.875rem;/*350px*/
+        height: 1.875rem;/*30px*/
+        padding: 0rem 0rem 0rem 1.875rem;/*0px 0px 0px 30px*/
+        border-radius: .3125rem;/*5px*/
+        color: $color-text-4;
+        font-family: verdana;
+        border-style: none;
+        border-bottom: .0313rem solid rgba(0, 0, 0, 0.8);/*0.5px*/
+    }
+}

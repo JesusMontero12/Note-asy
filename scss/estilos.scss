@@ -1,0 +1,35 @@
+/*-----Enlace carpeta utilities-----*/
+/*Variables, mixins, funciones*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/funciones";
+
+/*-----Enlaces carpeta Base-----*/
+/*tipografias, reset*/
+@import "./base/reset";
+@import "./base/typografias";
+
+/*-----Enlaces carpeta layout-----*/
+/*index: header, main, footer*/
+@import "./layout/index-header";
+@import "./layout/index-main";
+@import "./layout/footer";
+/*login, register*/
+@import "./layout/login-form";
+@import "./layout/register-form";
+/*dashboard: grid, header, nav superior, main*/
+@import "./layout/dashboard-grid";
+@import "./layout/dashboard-header";
+@import "./layout/dashboard-nav";
+@import "./layout/dashboard-main";
+/*Configuration: header, main*/
+@import "./layout/config-header";
+@import "./layout/config-main";
+
+/*------Enlaces Responsive Carpeta layout/media-----*/
+/*Media Query de 1024px(laptos)*/
+@import "./layout/media/media1024";
+/*Media Query de 768px(tablets)*/
+@import "./layout/media/media768";
+/*Media Query de 425px(Celular)*/
+@import "./layout/media/media425";
